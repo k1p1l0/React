@@ -2,9 +2,13 @@
   "name": "babel",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "start": "webpack-dev-server"
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.4.3",
+    "express": "^4.4.5"
   },
   "author": "",
   "license": "ISC"

@@ -1,25 +1,21 @@
 import React from 'react';
-import {Comment, Test} from './tutorial4';
+import {Comment} from './tutorial4';
 
 var CommentList = React.createClass({
   render: function() {
+    var commentNodes = this.props.data.map(function(comment) {
+      return (
+        <Comment author={comment.author} key={comment.id}>
+          {comment.text}
+        </Comment>
+      );
+    });
     return (
-      <div className="commentList">
-        <Comment author="Pete Hunt">This is one comment</Comment>
-        <Comment author="Jordan Walke"><Test>Hello MAZAFUKA</Test></Comment>
-      </div>
+    	<div className="commentList">
+    		{commentNodes}
+    	</div>
     );
   }
 });
 
-var CommentForm = React.createClass({
-  render: function() {
-    return (
-      <div className="commentForm">
-        Hello, world! I am a CommentForm.
-      </div>
-    );
-  }
-});
-
-export {CommentList, CommentForm}
+export {CommentList}

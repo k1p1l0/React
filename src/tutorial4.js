@@ -13,14 +13,4 @@ var Comment = React.createClass({
   }
 });
 
-var Test = React.createClass({
-	render: function() {
-		return (
-			<h1>
-			{this.props.children}
-			</h1>
-		);
-	}
-});
-
-export {Comment, Test};
+export {Comment};

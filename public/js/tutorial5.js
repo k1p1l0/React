@@ -1,7 +1,7 @@
 import React from 'react';
 
-var CommentForm = React.createClass({
-	getInitialState: function() {
+var CommentForm = React.createClass({ 
+    getInitialState: function() {
     	return {
     		author: '', 
     		text: ''
@@ -12,7 +12,7 @@ var CommentForm = React.createClass({
   		e.preventDefault();
 
   		var author = this.state.author.trim(),
-  			text = this.state.text.trim();
+  			  text = this.state.text.trim();
 
   		if (!text || !author) {
   			return;

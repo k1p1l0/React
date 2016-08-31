@@ -1,5 +1,5 @@
 module.exports = {
-	entry: './public/js/app.js',
+	entry: './public/js/redux.js',
   	output: {
     	filename: './public/js/bundle.js'
   	},
